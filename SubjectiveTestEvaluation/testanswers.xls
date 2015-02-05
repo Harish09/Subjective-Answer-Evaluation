@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <Worksheet ss:Name="Table1">
+  <Table>
+   <Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="110"/>   <Row>
+    <Cell><Data ss:Type="String">rno</Data></Cell>
+    <Cell><Data ss:Type="String">qno</Data></Cell>
+    <Cell><Data ss:Type="String">answer</Data></Cell>
+    <Cell><Data ss:Type="String">grade</Data></Cell>
+    <Cell><Data ss:Type="String">human_grade</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">101</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Parallel archtecture systems are as follows
+	1.Shared Memory-All the processors share a common memory
+	2.Shared Disk -All the processors share a common disk
+	3.Shared Nothing-The processors share neither a common memory nor common disk.
+	4.Hierarchical Architecture-This model is a hybrid of the preceding three architectures.
+
+	1.Shared Memory-
+		
+	In a shared-memory architecture, the processors and disks have access to a common
+	memory, typically via a bus or through an interconnection network. The
+	benefit of shared memory is extremely efficient communication between processors—
+	data in shared memory can be accessed by any processor without being
+	moved with software. A processor can send messages to other processors much
+	faster by using memory writes (which usually take less than a microsecond) than
+	by sending a message through a communication mechanism. The downside of
+	shared-memory machines is that the architecture is not scalable beyond 32 or 64
+	processors because the bus or the interconnection network becomes a bottleneck
+	(since it is shared by all processors). Adding more processors does not help after
+	a point, since the processors will spend most of their time waiting for their turn
+	on the bus to access memory.
+	Shared-memory architectures usually have large memory caches at each processor,
+	so that referencing of the shared memory is avoided whenever possible.
+	2.Shared Disk
+		In the shared-disk model, all processors can access all disks directly via an interconnection
+	network, but the processors have private memories. There are two
+	advantages of this architecture over a shared-memory architecture. First, since
+	each processor has its own memory, the memory bus is not a bottleneck. Second,
+	it offers a cheap way to provide a degree of fault tolerance: If a processor (or its
+	memory) fails, the other processors can take over its tasks, since the database is
+	resident on disks that are accessible from all processors. We can make the disk
+	subsystem itself fault tolerant by using a RAID architecture, as described in Chapter
+	10. The shared-disk architecture has found acceptance in many applications.
+	The main problem with a shared-disk system is again scalability. Although
+	the memory bus is no longer a bottleneck, the interconnection to the disk subsystem
+	is now a bottleneck; it is particularly so in a situation where the database
+	makes a large number of accesses to disks. Compared to shared-memory systems,
+	shared-disk systems can scale to a somewhat larger number of processors, but
+	communication across processors is slower (up to a few milliseconds in the absence
+	of special-purpose hardware for communication), since it has to go through
+	a communication network.</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">102</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">*Shared memory : 
+	1.These models are helpful.
+	2.These are used for parallel databases.
+	3.All the processors share a common memory.
+*Shared disk   :
+	1. All the processors share a common set of disks.
+	2.Shared-disk systems are sometimes called clusters.
+*Shared nothing: 
+	1.The processors share neither a common memory nor common disk 
+*Hierarchical : This model is a hybrid of the preceding three architectures 
+1)Shared Memory: 
+	the processors and disks have access to a common memory, typically via a bus or throughan interconnection network.A processor can send messages to other processors much faster by using memory writes than by sending a message through a communication mechanism.Capable of 32 or 64 processors because the bus or theinterconnection network becomes a bottleneck .Shared-memory architectures usually have large memory caches at each processor,so that referencing of the shared memory is avoided whenever possible.the caches need to be kept coherent,that is, if a
+processor performs a write to a memory location, the data in that memory location
+should be either updated at or removed from any processorwhere the data is cached.
+
+2) Shared Disk:
+			all processors can access all disks directly via an interconnection
+network, but the processors have private memories.there are 2 advantages
+	1)since each processor has its own memory, the memory bus is not a bottleneck. 
+	2)Second, it offers a cheap way to provide a degree of fault tolerance.
+	 If a processor (or its memory) fails,the other processors can take over its tasks, since the database is resident on disks that are accessible from all processors.We can make the disk subsystem itself fault	tolerant by using a RAID architecture.
+	The main problem with a shared-disk system is again scalability. Although the
+memory bus is no longer a bottleneck, the interconnection to the disk subsystem is
+now a bottleneck.
+</Data></Cell>
+    <Cell><Data ss:Type="Number">8.999999999999998</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">103</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Architectural models used for parallel machines are:
+1. Shared memory
+2.  Shared disk
+3. Shared nothing
+4. Hierarchical
+1. Shared memory model:
+In a shared-memory architecture, the processors and disks have access to a common memory, typically via a bus or through an interconnection network. 
+Data in shared memory can be accessed by any processor without being moved with software. A processor can send messages to other processors much faster by using memory writes. The disadvantage of shared-memory machines is that the architecture is not scalable beyond 32 or 64 processors. 
+Shared-memory architectures usually have large memory caches at each processor, so that referencing of the shared memory is avoided whenever possible. The caches need to be kept coherent; that is, if a processor performs a write to a memory location, the data in that memory location should be either updated at or removed from any processor where the data are cached. Maintaining cache coherency becomes an increasing overhead with increasing numbers of processors. Consequently, shared-memory machines are not capable of scaling up beyond a point.
+2. Shared Disk model:
+In the shared-disk model, all processors can access all disks directly via an interconnection network. The processors have private memories. 
+Advantages of this architecture over a shared-memory architecture.-
+a.) Since each processor has its own memory, the memory bus is not a bottleneck.
+b.)It offers a cheap way to provide a degree of fault tolerance.
+.We can make the disk subsystem itself fault tolerant by using a RAID architecture. 
+Scalability is the problem with shared disk.  Although the memory bus is no longer a bottleneck, the interconnection to the disk subsystem is now a bottleneck; it is particularly so in a situation where the database makes a large number of accesses to disks. Compared to shared-memory systems, shared-disk systems can scale to a somewhat larger number of processors, but communication across processors is slower.
+</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">104</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">There are 4 architecture models for parallel machines
+	i)Shared Memory
+	ii)Shared Disk
+	iii)Shared Nothing
+	iv)Hierarchical
+
+i)Shared Memory:
+	Features:
+		Processors and disks have access to a common memory, It access memory via a bus or through an interconnection network.
+		It has extremely efficient communication between processors. Data in shared memory can be accessed by any processor without having to move it
+			 using software.
+		It widely used for lower degrees of parallelism (4 to 8).
+	Drawbacks:
+		 Architecture is not scalable beyond 32 or 64 processors since the bus or the interconnection network becomes a bottleneck
+		
+
+ii)Shared Disk
+	Features:
+		All processors can directly access all disks via an interconnection network, but the processors have private memories.
+		The memory bus is not a bottleneck
+		Architecture provides a degree of fault-tolerance,if a processor fails, the other processors can take over its tasks since the database is resident on disks
+		 that are accessible from all processors.
+	Examples:  IBM Sysplex and DEC clusters (now part of Compaq) running Rdb (now Oracle Rdb) were early commercial users 
+	Drawbacks:
+		 bottleneck now occurs at interconnection to the disk subsystem.
+		Shared-disk systems can scale to a somewhat larger number of processors, but communication between processors is slower</Data></Cell>
+    <Cell><Data ss:Type="Number">4.000000000000001</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">105</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Parallel database system improve performance by increasing throughput,scaling
+up using multiple processors.Many operations are performed simultaneously.Coarse grained
+consists of small no of processors.and massively grain consists of 1000 of  small processors.
+1]shared Disk
+2]shared Memory
+3]shared nothing
+4]heirarchical 
+
+1]shared disk:
+	in this all processors can access  shared disk via interconnection network,but they have private
+memory also.advantages are i]reduced bottlneck:because all processors have private memory,so no bottleneck.
+ii]fault tolerance:if one processor fail,the other processor can take its task as they can access databse 
+which is in shard disk.	
+	Problem is bottelneck at disk where database makes large no of disk access.
+Shard disk can scale upto many processors but speed is lower.
+2]shard Memory:
+	All processors can access shared memory through interconnection network.
+Data in shared memory can be accessed by any processors withot being moved with s/w;
+A processor can send messsage to other processors much faster by memory writes.This
+architcure is not scalable  beyond 32 or 64 processors as it will lead to bottleneck.
+shard memory architecturs usulay have large memory caches at each processor,so that 
+referencing of shard memory is avoided whenever possible.
+	</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">106</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Architecture of parallel machine
+	1)shared memory arch:
+		In shared memory arch.the procesess shared the memory and disk so that
+	 	it will reduces the message passing 
+		cost but increase overhead of bottleneck
+		required to maintain congestion control.
+		and ovrload .
+	2)shared disk arch	
+		In shared disk that is secondary storage and address also. so that it will use to get updated data in one disk only.
+		more scalable than shared memory.
+		It also posess bottle neck problem.
+	3)shared nothing arch
+		shared nothing dosent share anything but it is very difficult to implement.
+		,more scalable than shared disk.
+		software reqd at front end
+	4)hierarchial architect
+		hierarchial structure contain shared nothing at upper side then shared disk then shared memory.</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">107</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">1. Shared Memory (common memory, shared between processors)
+2. Shared Disk (disks are shared between processors)
+3. Shared Nothing (neither disks nor memory is shared)
+4. Hierarchical (a combination of above architectures)
+
+1.Shared memory:
+In this architecture all processors and disks in the system share a common memory i.e they access a common memory. They access this memory through a bus or any
+interconnection network.
+Advantage:
+1. Effiiceint, faster communication between processors
+2. Large memory caches  at each processor
+Disadvantage:
+1. Not scalable beyond 40-60 processors
+2. Bottleneck at memory bus
+3. Cache coherency must be implemented
+
+2. Shared Disk
+In this architecture the proccessors do not share a common memory but share disks in the system. Each processor has individual memory but access disks in the system through
+an interconnection network.
+Advantage:
+1. Failure of one processor does not affect the system.
+2. No bottleneck at memory bus.
+3. Fault tolerance is cheap.
+4. More scalable than shared memory architecture.
+Disadvantage:
+1. Not highly scalable.</Data></Cell>
+    <Cell><Data ss:Type="Number">1.7645832473757879</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">108</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">        Shared memory : All the processors share a common memory.
+        Shared disk   : All the processors share a common set of disks.Shared-disk systems are sometimes called clusters.
+        Shared nothing: The processors share neither a common memory nor common disk
+        Hierarchical : This model is a hybrid of the preceding three architectures
+
+		1)Shared Memory:
+			The processors and disks have access to a common memory, typically via a bus or
+			through an interconnection network.
+			A processor can send messages to other processors much faster by using memory
+writes than by sending a message through a communication mechanism.
+			capable of 32 or 64 processors because the bus or the
+interconnection network becomes a bottleneck .
+			Shared-memory architectures usually have large memory caches at each processor,
+so that referencing of the shared memory is avoided whenever possible.
+			the caches need to be kept coherent,that is, if a
+processor performs a write to a memory location, the data in that memory location
+should be either updated at or removed from any processorwhere the data is cached.
+
+		2) Shared Disk:
+			all processors can access all disks directly via an interconnection
+network, but the processors have private memories.
+	there are 2 advantages
+	1)since each processor has its own memory, the memory bus is not a bottleneck.
+	2)Second, it offers a cheap way to provide a degree of fault tolerance: If a processor (or its memory) fails,
+the other processors can take over its tasks, since the database is resident on disks that are accessible from all processors.
+	We can make the disk subsystem itself fault	tolerant by using a RAID architecture
+	The main problem with a shared-disk system is again scalability. Although the
+memory bus is no longer a bottleneck, the interconnection to the disk subsystem is now a bottleneck.
+</Data></Cell>
+    <Cell><Data ss:Type="Number">4.016252883585461</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">109</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">	Parallel database system improve performance by increasing throughput,scaling
+up using multiple processors.Many operations are performed simultaneously.Coarse grained
+consists of small no of processors.and massively grain consists of 1000 of  small processors.
+1]shared Disk
+2]shared Memory
+3]shared nothing
+4]heirarchical
+
+1]shared disk:
+	in this all processors can access  shared disk via interconnection network,but they have private
+memory also.advantages are i]reduced bottlneck:because all processors have private memory,so no bottleneck.
+ii]fault tolerance:if one processor fail,the other processor can take its task as they can access databse 
+which is in shard disk.	
+	Problem is bottelneck at disk where database makes large no of disk access.
+Shard disk can scale upto many processors but speed is lower.
+2]shard Memory:
+	All processors can access shared memory through interconnection network.
+Data in shared memory can be accessed by any processors withot being moved with s/w;
+A processor can send messsage to other processors much faster by memory writes.This
+architcure is not scalable  beyond 32 or 64 processors as it will lead to bottleneck.
+shard memory architecturs usulay have large memory caches at each processor,so that 
+referencing of shard memory is avoided whenever possible.
+</Data></Cell>
+    <Cell><Data ss:Type="Number">1.757217701268005</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">110</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Architechtures for Parellel Machines:-
+	1.Shared memory Architecture :- In this architecture processors share a common memory
+	2.Shared disk Architecture:- In this architecture processors share a common disk
+	3.Shared nothing Architecture:- In this architecture processors share neither a common memory nor common disk
+	4.Hierarchical Architecture:- In this architecture all the three architectures Shared memory, Shared Disk, Shared Nothing are present in Hybrid way.
+
+Shared Memory Architecture:-
+	-Here the processors and disks can access the common memory, for this communication bus or any other interconnection network can be used.
+	-Communication between the processors is very efficient.
+	-Data in shared memory can be accessed by any processor.
+	-The drawback of this architectures is that this is not scalable beyond 32 or 64 processors because the bus or the interconnection network becomes a bottleneck.
+	-Adding more processors will be applicable or it will work at some point only.
+	-Maintaining cache coherency becomes an increasing overhead with increasing numbers of processors.
+
+Shared Disk Architecture:-
+	-Here, all processors can access all disks directly by an interconnection network and the processors have private memories
+	-There are tow advantages :-
+		1.As each processor has its own memory, so there will not be overhead of bottleneck in the memory bus.
+		2.It gives a cheap way to provide a degree of fault tolerance.
+			If any processor fails, then other processors can take over its tasks, as the database is resident on disks that are accessible from all processors.
+	-The main problem with a this system is scalability.
+	-As compared to shared-memory systems, shared-disk systems can scale to a somewhat larger number of processors, but communication across processors is slower. </Data></Cell>
+    <Cell><Data ss:Type="Number">1.2611014145371064</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">111</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">1)Shared memory.
+2)Shared disk.
+3)Shared nothing.
+4)Hierarchical
+
+1)Shared memory:
+
+Processors and disks have access to a common memory, typically via a bus or through an interconnection network.
+Extremely efficient communication between processors data in shared memory can be accessed by any processor without having to move it using software.
+Architecture is not scalable beyond 32 or 64 processors.
+Bus or the interconnection network becomes a bottleneck.
+
+2)Shared disk:
+
+The processors have private memories.
+The memory bus is not a bottleneck.
+Architecture provides a degree of fault-tolerance  if a processor fails, the other processors can take over its tasks.
+ bottleneck now occurs at interconnection to the disk subsystem.</Data></Cell>
+    <Cell><Data ss:Type="Number">1.8133189415920974</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">     Architectural model for parllel model:
+                 1)shared memory
+		 2)shared disk
+		 3)shared nothing
+		 4)hierarchical
+
+       1)shared memory:
+               in this model memory is share to all processors.
+
+       2)shared disk:
+               in this model disk is share to different processors.
+
+       3)shared nothing:
+               in this model niether share memory nor share disk to processors.
+
+       4)hirarchical:
+               in this model all the three model are included.</Data></Cell>
+    <Cell><Data ss:Type="Number">3.814953443907254</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">113</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">	4 architectures are used:
+	1) shared memory.
+	2) shared disk.
+	3) shared nothing.
+	4) hybrid.
+
+1) Shared memory:
+	1) in this model all processors can access common memory.
+	2) they can access common memory via bus.
+	3) but only one processor can access bus at a time.i.e only one query can excuted at a time.
+	4) Its best suited for small parallel architecture.
+2) shared disk:
+	1) in this model  all processor can access common disk.intermediate bus is used for accessing data from disk.
+	2) each processor having its own memory. so it can store its data in memory.
+	3) disk can be accessed at time only one processor so query processing time is increased.
+	4) their is problem of cahe coherence.
+3) Shared nothing :
+	1) In this model each processor having its own memory and disk.
+	2) so it require minimum time to excute query.
+	3) if any processor require data from other processor then their is overhead of i/o processing .
+	4) Its used for most of parallel database system. </Data></Cell>
+    <Cell><Data ss:Type="Number">3.1033932640615856</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">114</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">   In parllel machines either single query executed parllely or more than one machine by subdividing it speedup or quereis are executed parllely to increase both speedup and scaleup.
+ In parllel system 4 type are divided:
+  1)Shared memory
+  2)Shared Disk
+  3)Shared Nothing
+  4)Heirarchical model
+
+1) SHARED MEMORY:
+    In shared memory architecture more than one processor executed parllely using memory or shared memory. These processor may be use their private memory or shared memory in order to reduce access to shared memory.Single memory is accesed simply by signal to bus occur and responce time may be increase as single bus is used most of the processors have to wait until bus become free.
+
+2) SHARED DISK:
+   In this model each processor have separate memory but they can share data of disk.Responce time is reduced as compareto shared memory as most of the data required available in memory.   For accesing data of disk use single bus architecture. Here ALSO sometime bottleneck of bus occur but less as compare to shared memory.</Data></Cell>
+    <Cell><Data ss:Type="Number">2.905025455441704</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">115</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Models for parallel machines:
+1.Shared memory
+2.Shared disks
+3.Shared nothing
+4.Hybrid
+
+Shared memory:
+	In shared memory model,all processors share only memory with each other.They do not share disks.
+1)Each processor has its own seperate disk.
+2)Each CPU has full access to all sharedmemory through a common bus.
+3)Communication between nodes occur via shared memory.
+
+Shared disk:
+	In shared disk model,all processors share only disk with each other.They do not share memory.Each processor has its own seperate memory.
+1)Each node consists of one or more CPUs and associated memory.
+2)Memory is not shared between nodes.
+3)Communication occurs over a common high-speed bus.
+4)Each node has access to the same disks and other resources.
+</Data></Cell>
+    <Cell><Data ss:Type="Number">2.9484750241050524</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">116</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Architectural model for parallel systems--&gt;
+
+	Parallel systems improve processing and I/O speeds by using multiple processors and disks in parallel. Parallel machines are becoming increasingly common, making the study of parallel database systems correspondingly more important. There are several architectural models for parallel machines.
+• Shared memory. All the processors share a common memory
+• Shared disk. All the processors share a common set of disks
+Shared-disk systems are sometimes called clusters.
+• Shared nothing. The processors share neither a common memory nor common
+disk
+• Hierarchical. This model is a hybrid of the preceding three architectures
+
+
+--&gt; SharedMemory
+	In a shared-memory architecture, the processors and disks have access to a common memory, typically via a bus or through an interconnection network. The benefit of shared memory is extremely efficient communication between processors
+data in shared memory can be accessed by any processor without being moved with software. A processor can send messages to other processors much faster by using memory writes (which usually take less than a microsecond) than by sending a message through a communication mechanism. The downside of shared-memory machines is that the architecture is not scalable beyond 32 or 64
+processors because the bus or the interconnection network becomes a bottleneck .
+	Adding more processors does not help after a point, since the processors will spend most of their time waiting for their turn on the bus to access memory. Shared-memory architectures usually have large memory caches at each processor, so that referencing of the shared memory is avoided whenever possible However, at least some of the data will not be in the cache, and accesses will have to go to the shared memory. Moreover, the caches need to be kept coherent; that is, if a processor performs a write to a memory location, the data in that memory location should be either updated at or removed from any processor where the data are cached. Maintaining cache coherency becomes an increasing overhead with increasing numbers of processors. Consequently, shared-memory machines are not capable of scaling up beyond a point; current shared-memory machines cannot support more than 64 processors.
+
+--&gt;Shared Disk
+	In the shared-disk model, all processors can access all disks directly via an interconnection network, but the processors have private memories. There are two advantages of this architecture over a shared-memory architecture. First, since each processor has its own memory, the memory bus is not a bottleneck. Second, it offers a cheap way to provide a degree of fault tolerance: If a processor fails, the other processors can take over its tasks, since the database is resident on disks that are accessible from all processors.  The shared-disk architecture has found acceptance in many applications.
+	The main problem with a shared-disk system is again scalability. Although the memory bus is no longer a bottleneck, the interconnection to the disk subsystem is now a bottleneck; it is particularly so in a situation where the database makes a large number of accesses to disks. Compared to shared-memory systems, shared-disk systems can scale to a somewhat larger number of processors, but communication across processors is slower, since it has to go through a communication network.</Data></Cell>
+    <Cell><Data ss:Type="Number">3.140833919319786</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">117</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">state each of d arch models for parallel m/c. outof  this explain shared models with features
+The architecture of a database system is greatly influenced by the underlying
+computer system on which it runs, in particular by such aspects of computer
+architecture as networking, parallelism, and distribution
+parallel database architecture:
+1. shared memory,
+2. shared disk,
+3. shared nothing &amp;
+4. hierachical architecture
+
+1. shared memory:-
+In shared memory architecture all the processor shares common memory. It makes use of bus interconnection network. It is extremely useful in communication between processors.Have large memory cache.
+Drawback:-
+Not scalable beyond 32-64 processor-will result in bottleneck
+
+2. shared disk(clusters):-
+In shared disk architecture processors share common disk.All processors can access all disks directly via an interconnection
+network, but the processors have private memories.
+Advantages:-
+1.No bottleneck
+2.Fault Tolerance
+Drawback:-
+Not scaleble</Data></Cell>
+    <Cell><Data ss:Type="Number">3.5754297530025947</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">118</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Their are four types of models for parallel machine :
+1. Shared memory -  processors share a common memory
+2. Shared disk - processors share a common disk
+3. Shared nothing - processors share neither a common memory nor common disk
+4. Hierarchical -Combines characteristics of shared-memory, shared-disk, and shared-nothing architectures
+
+1. Shared memory :-
+	Processors and disks have access to a common memory, typically via a bus or through an interconnection network.
+	Extremely efficient communication between processors — data in shared memory can be accessed by any processor without having to move it using software.
+
+2. Shared disk :-
+	All processors can directly access all disks via an interconnection network, but the processors have private memories.
+	The memory bus is not a bottleneck
+	Architecture provides a degree of fault-tolerance — if a processor fails, the other processors can take over its tasks since the database is resident on disks that are accessible from all processors.
+	Examples:  IBM Sysplex and DEC clusters 
+
+3.Shared Nothing :-
+	Node consists of a processor, memory, and one or more disks. Processors at one node  communicate with another processor at another node using an interconnection network. A node functions as the server for the data on the disk or disks the node owns.
+	Examples: Teradata, Tandem, Oracle-n CUBE
+
+4.Hirarchical :-
+	Combines characteristics of shared-memory, shared-disk, and shared-nothing architectures.
+	Top level is a shared-nothing architecture –  nodes connected by an interconnection network, and do not share disks or memory with each other.
+	Each node of the system could be a shared-memory system with a few processors.
+	Reduce the complexity of programming such systems by distributed virtual-memory architectures</Data></Cell>
+    <Cell><Data ss:Type="Number">1.7700695602614755</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">119</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">	4 Arch models r used in parallel m/c
+	1.shared memory
+	2.shared disk
+	3.shared nothing
+	4.hirarchical/hybrid
+
+   1.Shared memory
+		1.In this type of shared model All the processor having shared memory.
+		  means all processor use common memory for accessing the data
+		2.they can access memory via bus
+		3.only one processor can access the bus at a time i.e only one query executed ata time.
+		4.it is suitable for small arch
+    2.Shared Disk
+		1.In this type of shared model All the processor having shared disk.
+		2.Each processing having its own private memory So it can store the data into memory
+		3.disk can be accessed by only one processor at a time so query processing time incresed
+
+   3.Shared Nothing
+		1.each processor having its own memory
+		2.so minimum query execution time
+		3.if  any processor wnt to access data from another processor then overhead i/p processing
+		4.used in parallel database processing	System	
+    4Hybrid 
+		means combination of shared memory ,s disk shared nothing</Data></Cell>
+    <Cell><Data ss:Type="Number">1.668750967231458</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">120</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">There are several architectural models for parallel machines.
+- Shared memory: All the processors share a common memory 
+- Shared disk: All the processors share a common set of disks 
+               Shared disk systems are sometimes called clusters.
+- Shared nothing: The processors share neither a common memory nor common
+                  disk 
+- Hierarchical: This model is a hybrid of the preceding three architectures.
+
+1)Shared Memory model:
+
+	In a shared-memory architecture, the processors and disks have access to a common
+memory, typically via a bus or through an interconnection network. The
+benefit of shared memory is extremely efficient communication between processors
+data in shared memory can be accessed by any processor without being
+moved with software. A processor can send messages to other processors much
+faster by using memory writes than by sending a message through a communication mechanism. The downside of
+shared-memory machines is that the architecture is not scalable beyond 32 or 64
+processors because the bus or the interconnection network becomes a bottleneck
+.Adding more processors does not help after a point, since the processors will spend most of their time waiting for their turn
+on the bus to access memory.Shared-memory architectures usually have large memory caches at each processor,
+so that referencing of the shared memory is avoided whenever possible.
+
+2)Shared Disk model:
+	
+	In the shared-disk model, all processors can access all disks directly via an interconnection
+network, but the processors have private memories. There are two
+advantages of this architecture over a shared-memory architecture. First, since
+each processor has its own memory, the memory bus is not a bottleneck. Second,
+it offers a cheap way to provide a degree of fault tolerance: If a processor fails, the other processors can take over its tasks, since the database is
+resident on disks that are accessible from all processors. The shared-disk architecture has found acceptance in many applications.
+The main problem with a shared-disk system is again scalability. Although
+the memory bus is no longer a bottleneck, the interconnection to the disk subsystem
+is now a bottleneck; it is particularly so in a situation where the database
+makes a large number of accesses to disks. Compared to shared-memory systems,
+shared-disk systems can scale to a somewhat larger number of processors, but
+communication across processors is slower since it has to go through a communication network.</Data></Cell>
+    <Cell><Data ss:Type="Number">4.0746456428549</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">121</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">There are various architecture model for parrallel model.It consist of following model:
+	Shared Disk
+	Shared Memory
+	Shared Nothing
+	Hierarchical
+
+Shared Memory:
+In this architecture, the processors and disks have access to a common memory, typically via a bus . The benefit of shared memory is extremely efficient communication between processors—
+data in shared memory can be accessed by any processor without being moved with software. A processor can send messages to other processors much
+faster by using memory writes (which usually take less than a microsecond) than by sending a message through a communication mechanism. The disadvantage of
+shared-memory machines is that the architecture is not scalable beyond 32 or 64 processors because the bus or the interconnection network becomes a bottleneck
+(since it is shared by all processors). Adding more processors does not help after a point, since the processors will spend most of their time waiting for their turn
+on the bus to access memory.
+Shared-memory architectures usually have large memory caches at each processor,
+so that referencing of the shared memory is avoided whenever possible. Consequently, shared-memory machines
+are not capable of scaling up beyond a point; current shared-memory machines
+cannot support more than 64 processors.
+
+Shared Disk
+In the shared-disk model, all processors can access all disks directly via an interconnection
+network, but the processors have private memories. 
+Advantage:
+since each processor has its own memory, the memory bus is not a bottleneck. Second,
+it offers a cheap way to provide a degree of fault tolerance: If a processor (or its
+memory) fails, the other processors can take over its tasks, since the database is
+resident on disks that are accessible from all processors. We can make the disk
+subsystem itself fault tolerant by using a RAID architecture, as described in Chapter
+10. The shared-disk architecture has found acceptance in many applications.
+The main problem with a shared-disk system is again scalability. Although
+the memory bus is no longer a bottleneck, the interconnection to the disk subsystem
+is now a bottleneck; it is particularly so in a situation where the database
+makes a large number of accesses to disks. Compared to shared-memory systems,
+shared-disk systems can scale to a somewhat larger number of processors, but
+communication across processors is slower (up to a few milliseconds in the absence
+of special-purpose hardware for communication), since it has to go through
+a communication network.</Data></Cell>
+    <Cell><Data ss:Type="Number">4.05170714900305</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">122</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">	1) explain the shared models by explaining their features.
+
+ans: 
+ 1)Shared memory: All the processors share a common memory.The main advantage is their is efficient communication between processors.The processors can send msgs to one other in quick fashion. They have large memory cache at each processor.shared-memory machines are not capable of scaling up beyond a point; cur
+ent shared-memory machines cannot support more than 64 processors.
+
+2) Shared disk: All the processors share a common set of disks .They are  called clusters.The memory is not a bottleneck as each processor has its own memory.It is fault tolerence.If one processor fails other can take up its task  their is no system failure. The main problem is scalability.</Data></Cell>
+    <Cell><Data ss:Type="Number">3.1900165919596524</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">123</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">1.Shared memory
+2.shared disk
+3.Shared nothing
+4.Hierarchical model
+
+1.Shared Memory:
+	Processors and disks have access to a common memory, typically via a bus or through an interconnection network.
+Extremely efficient communication between processors
+Message exchange faster by using memory writes
+Uses large memory caches at each processor so shared memory reference reduced
+Widely used for lower degrees of parallelism (4 to 8).
+Downside – architecture is not scalable beyond 32 or 64 processors since the bus or the interconnection network becomes a bottleneck 
+In case of more processors, processors will spend most of their time waiting for their turn on the bus to access memory
+The caches need to be kept coherent- update OR remove
+
+
+2.Shared Disk:
+	It has shared disk architecture but evrey processor has its own memory.All processors can directly access all disks via an interconnection network, but the processors have private memories.
+The memory bus is not a bottleneck
+Architecture provides a degree of fault-tolerance — if a processor fails, the other processors can take over its tasks since the database is resident on disks that are accessible from all processors
+Downside:
+Bottle neck due to interconnection network .
+Scalability is again the problem in this,i.e. it can scale more than shared memory architecture but communication between processors is slower.
+Fault tolerance can be provided using RAID architecture.</Data></Cell>
+    <Cell><Data ss:Type="Number">1.7857780409611368</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">124</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">	In parallel machines either single query is executed parallely on more than one machine by subdividing it for speedup or more than one queries are
+executed parallely to increase both speedup and scaleup.
+In parallel model mainly 4 diff architectures are used.
+1)Shaired Memory
+2)Shaired Disk
+3)Shaired Nothing
+4)Hierarchical Model	
+
+1)Shaired Memory:
+	In shaired memory architecture more than one processors are executed parallely and using memory or shaired memory.These processors may have
+their own private memory in order to reduce access to shaired memory.Single memory is access by all processor by using single bus.But there may be bottelneck
+ to bus occur and response time may be increases as a single bus is used most most of the processors should wait until
+bus becomes free.IT is gool for small no of processors.
+
+2)Shaired Disk:
+	In these model each processor have separate memory but they can shair data of th disks.Response time is reduced
+as compaire to shaired memory as most of the data required is available in memory.For accessing data of disk they use single
+bus architecture.Here also sometime bottleneck of bus occur but less compaire to shaired memory.</Data></Cell>
+    <Cell><Data ss:Type="Number">3.8762224876687705</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">125</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">1.Shared memory : All the processors share a common memory.
+2.Shared disk   : All the processors share a common set of disks.Shared-disk systems
+	are sometimes called clusters.
+3.Shared nothing: The processors share neither a common memory nor common disk 
+4.Hierarchical : This model is a hybrid of the preceding three architectures 
+		
+1)Shared Memory: 
+	the processors and disks have access to a common memory, typically via a bus or through an 			
+interconnection network. 
+	A processor can send messages to other processors much faster by using memory
+writes than by sending a message through a communication mechanism.
+	capable of 32 or 64 processors because the bus or the
+interconnection network becomes a bottleneck .
+	Shared-memory architectures usually have large memory caches at each processor,
+so that referencing of the shared memory is avoided whenever possible.
+	the caches need to be kept coherent,that is, if a
+processor performs a write to a memory location, the data in that memory location
+should be either updated at or removed from any processorwhere the data is cached.
+
+2) Shared Disk:
+	all processors can access all disks directly via an interconnection
+network, but the processors have private memories. 
+There  are 2 advantages
+	1)since each processor has its own memory, the memory bus is not a bottleneck. 
+	2)Second, it offers a cheap way to provide a degree of fault tolerance: 
+	If a processor (or its memory) fails, the other processors can take over its tasks, 
+since the database is resident on disks that are accessible from all processors. 
+	We can make the disk subsystem itself fault tolerant by using a RAID architecture
+	The main problem with a shared-disk system is again scalability. Although the
+memory bus is no longer a bottleneck, the interconnection to the disk subsystem is
+now a bottleneck.</Data></Cell>
+    <Cell><Data ss:Type="Number">4.106610449414477</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">126</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String"> There are 4 types:
+
+        Shared memory : All the processors share a common memory.
+        Shared disk   : All the processors share a common set of disks.Shared-disk systems are sometimes called clusters.
+        Shared nothing: The processors share neither a common memory nor common disk 
+        Hierarchical : This model is a hybrid of the preceding three architectures 
+		
+		
+1) Shared Memory : the processors and disks have access to a common memory, typically via a bus or through an interconnection network.A processor can send messages to     other processors much faster by using memory writes than by sending a message through a communication mechanism.Capable of 32 or 64 processors because the bus or    the interconnection network becomes a bottleneck .
+   Shared-memory architectures usually have large memory caches at each processor,
+   so that referencing of the shared memory is avoided whenever possible.The caches need to be kept coherent,that is, if a
+   processor performs a write to a memory location, the data in that memory location should be either updated at or removed from any processorwhere the data is cached.
+
+2) Shared Disk : In shared disk all processors can access all disks directly via an interconnection network, but the processors have private memories. 
+	Advantages:
+	i)since each processor has its own memory, the memory bus is not a bottleneck. 
+	ii)Second, it offers a cheap way to provide a degree of fault tolerance: If a processor (or its memory) fails,
+  the other processors can take over its tasks, since the database is resident on disks
+  that are accessible from all processors. We can make the disk subsystem itself fault tolerant by using a RAID architecture. The main problem with a shared-disk     system  is again scalability. Although the memory bus is no longer a bottleneck, the interconnection to the disk subsystem  is now a bottleneck.</Data></Cell>
+    <Cell><Data ss:Type="Number">3.8759386598521934</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">127</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">
+There are 4 types:
+
+        Shared memory : All the processors share a common memory.
+        Shared disk   : All the processors share a common set of disks.Shared-disk systems are sometimes called clusters.
+        Shared nothing: The processors share neither a common memory nor common disk
+        Hierarchical : This model is a hybrid of the preceding three architectures
+
+
+1) Shared Memory : the processors and disks have access to a common memory, typically via a bus or through an interconnection network.A processor can send messages to     other processors much faster by using memory writes than by sending a message through a communication mechanism.Capable of 32 or 64 processors because the bus or    the interconnection network becomes a bottleneck .
+   Shared-memory architectures usually have large memory caches at each processor,
+   so that referencing of the shared memory is avoided whenever possible.The caches need to be kept coherent,that is, if a
+   processor performs a write to a memory location, the data in that memory location should be either updated at or removed from any processorwhere the data is cached.
+
+2) Shared Disk : In shared disk all processors can access all disks directly via an interconnection network, but the processors have private memories.
+	Advantages:
+	i)since each processor has its own memory, the memory bus is not a bottleneck.
+	ii)Second, it offers a cheap way to provide a degree of fault tolerance: If a processor (or its memory) fails,
+  the other processors can take over its tasks, since the database is resident on disks
+  that are accessible from all processors. We can make the disk subsystem itself fault tolerant by using a RAID architecture. The main problem with a shared-disk     system  is again scalability. Although the memory bus is no longer a bottleneck, the interconnection to the disk subsystem  is now a bottleneck.
+</Data></Cell>
+    <Cell><Data ss:Type="Number">1.2498795693432612</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">128</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">
+following are the architectural model for the parllel machine it include the following part,
+1)Shared memory --in this  processors share a common memory .
+2)Shared disk --in this the  processors share a common disk .
+3)Shared nothing -- in this model processors share neither a common memory nor common disk.
+4) Hierarchical --it isa the  hybrid of the above architectures.
+-in the shared memory Processors and disks have access to a common memory, typically via a bus or through an interconnection network.
+
+-it is the Extremely efficient communication between processors — data in shared memory can be accessed by any processor without having to move it using software.
+
+-shared memory is the Widely used for lower degrees of parallelism.
+-in shared disk all processors can directly access all disks via an interconnection network, but the processors have private memories with them.
+
+Example:
+    IBM Sysplex
+
+
+-in share nothing the Node consists of a processor, memory, and one or more disks. Processors at one node communicate with another processor at another node using an interconnection network. A node functions as the server for the data on the disk or disks the node owns.
+
+example:
+ Teradata, Tandem.
+
+-in herichical system it Combines characteristics of shared-memory, shared-disk, and shared-nothing architectures.
+-in this top level is a shared-nothing architecture – nodes connected by an interconnection network, and do not share disks or memory with each other.
+
+Example:
+      select title, A as author, publisher.name as pub_name,
+             publisher.branch as pub_branch, K.keyword
+      from books as B, unnest(B.author_array ) as A (author ),
+		unnest (B.keyword_set ) as K (keyword )
+</Data></Cell>
+    <Cell><Data ss:Type="Number">2.7773249980814425</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">129</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">
+1)Shared memory.
+2)Shared disk.
+3)Shared nothing.
+4)Hierarchical.
+
+1)Shared memory.
+
+Processors and disks have access to a common memory, typically via a bus or through an interconnection network.
+Extremely efficient communication between processors data in shared memory can be accessed by any processor without having to move it using software.
+Architecture is not scalable beyond 32 or 64 processors.
+  bus or the interconnection network becomes a bottleneck.
+
+2)Shared disk.
+
+The processors have private memories.
+The memory bus is not a bottleneck.
+Architecture provides a degree of fault-tolerance.
+ bottleneck now occurs at interconnection to the disk subsystem.
+</Data></Cell>
+    <Cell><Data ss:Type="Number">1.8235576357752277</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">130</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">
+Architectural model for parallel machines-
+
+1)Shared memory
+2)Shared disk
+3)Shared nothing
+4)Architectural model
+
+Shared memory
+Memory is shared between processors.
+Processes have access to a common memory via bus or through interconnection network.
+data in shared memory can be accessed by any processor without using any software.
+
+Shared Disk
+Disk is shared between processors
+Processors have private memories.
+If any processors fail architecture provides fault tolerance.
+</Data></Cell>
+    <Cell><Data ss:Type="Number">2.5655087650419355</Data></Cell>
+    <Cell><Data ss:Type="Number">2.5</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">131</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">
+Architechtures for Parellel Machines:-
+	1.Shared memory Architecture :- In this architecture processors share a common memory
+	2.Shared disk Architecture:- In this architecture processors share a common disk
+	3.Shared nothing Architecture:- In this architecture processors share neither a common memory nor common disk
+	4.Hierarchical Architecture:- In this architecture all the three architectures Shared memory, Shared Disk, Shared Nothing are present in Hybrid way.
+
+Shared Memory Architecture:-
+	-Here the processors and disks can access the common memory, for this communication bus or any other interconnection network can be used.
+	-Communication between the processors is very efficient.
+	-Data in shared memory can be accessed by any processor.
+	-The drawback of this architectures is that this is not scalable beyond 32 or 64 processors because the bus or the interconnection network becomes a bottleneck.
+	-Adding more processors will be applicable or it will work at some point only.
+	-Maintaining cache coherency becomes an increasing overhead with increasing numbers of processors.
+
+Shared Disk Architecture:-
+	-Here, all processors can access all disks directly by an interconnection network and the processors have private memories
+	-There are tow advantages :-
+		1.As each processor has its own memory, so there will not be overhead of bottleneck in the memory bus.
+		2.It gives a cheap way to provide a degree of fault tolerance.
+			If any processor fails, then other processors can take over its tasks, as the database is resident on disks that are accessible from all processors.
+	-The main problem with a this system is scalability.
+	-As compared to shared-memory systems, shared-disk systems can scale to a somewhat larger number of processors, but communication across processors is slower.
+</Data></Cell>
+    <Cell><Data ss:Type="Number">1.2611014145371064</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+   </Row>
+  </Table>
+ </Worksheet>
+</Workbook>
